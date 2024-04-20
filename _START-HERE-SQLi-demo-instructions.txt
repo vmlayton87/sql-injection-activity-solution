@@ -16,19 +16,21 @@ This activity will allow us to mimic an SQL injection attack using a small app o
 The app will consist of a simple log in and a mock user database on the back end that has purposefully 
 been left vulnerable to an SQL injection attack.
 
-1. First of all, get your fork of this repo up and running by installing these three packages:
+Step 1. First of all, get your fork of this repo up and running by installing these three packages:
 
    express
    sqlite3
    body-parser
 
-2. Read the long comments in the app.js file (And make sure not to uncomment anything you're not asked to uncomment). 
+Step 2. Run npm start on the command line to start the server, which should be rendering on localhost:3000.
+
+Step 3. Read the long comments in the app.js file (And make sure not to uncomment anything you're not asked to uncomment). 
 
    Make sure that you've read all of these comments, you understand them, and that you've followed them before starting Step 3.
 
-3. Type/copy-then-paste this exact info in the password field as if you were a valid user: unknown' OR '1'='1 
+STEP 4. Type/copy-then-paste these exact characters in the password field as if you were a valid user: unknown' OR '1'='1 
 
-4. At this point, the user you inserted in the db should be logged in even though the correct username was not submitted! 
+STEP 5. At this point, the user you inserted in the db should be logged in even though the correct username was not submitted! 
 
    (If you follow the instructions in the app.js file, you'll see the message "Login successful" on the page)
 

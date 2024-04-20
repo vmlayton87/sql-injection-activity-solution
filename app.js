@@ -1,18 +1,18 @@
-// Step 2 From the __START-HERE-SQLi-demo-instructions.txt File:
+// Step 3 From the __START-HERE-SQLi-demo-instructions.txt File:
 
-// Note: the suggested answer in the first box under the Mount the Attack section is incorrect; the answer
+// NOTE: If you're using the Canvas activity on your own, the suggested answer in the first box under the Mount the Attack section is incorrect; the answer
 // should be "We SHOULDN'T have been logged in!"
-
 
 // YOUR GOAL AS A WHITE HAT HACKER (and to satisfy the Acceptance Criteria in the graded assignment)
 // is to LOG IN AS IF YOU WERE THE ACTUAL USER! You know you're goal has been reached when you enter a malicious piece of 
 // SQL code in the password field and be logged in even though you didn't use the user's actual password!
 
-// Step 2: Read over the code below. To optimize your learning, spend at least 5 minutes of self-talk going through it. 
+// 1: Read over the code below. To optimize your learning, spend at least 5 minutes of self-talk going through it. 
 // Ask yourself "What is this code doing?" If you're not sure what the code is doing. Or if you're not sure how to describe what it's doing, 
 // just copy the code and paste it in an AI VSCode extension such as Codeium or in an external tool such as ChatGPT, or you could pay for GH Copilot. 
 
-// Step 3: Read over all the comments in this file and then follow the steps in the __START-HERE-SQLi-demo-instructions.txt file in this repo.
+// 2: Read over and follow all the comments in this file and then return to Step 4 in the __START-HERE-SQLi-demo-instructions.txt file 
+// to perform the SQL injection attack.
 
 
 const sqlite3 = require('sqlite3').verbose();
