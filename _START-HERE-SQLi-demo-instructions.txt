@@ -1,0 +1,62 @@
+You're wearing your WHITE hat today, correct, dear student?
+
+Let's perform an SQL Injection attack just to see how it can be done!
+
+NOTE: We'll probably do this after class assignment in class, anyway, but you're welcome to follow the instructions
+in the original assignment in Canvas if you want to make your own repo for practice, etc., but you don't have to. 
+
+Just forking and cloning this repo, following the instructions, and submitting your fork's url is enough. 
+If you still use the original activity, make sure to stop at number 3 and copy the remaining code to be copied/follow the instructions
+in this repo (not the solution code repo from HackerU) because of some unfortunate bugginess.
+
+Here is the original description of the assignment from the original Canvas page:
+
+"In order to take a closer look at SQL injection attacks, we're going to mount one ourselves. 
+This activity will allow us to mimic an SQL injection attack using a small app of our own creation. 
+The app will consist of a simple log in and a mock user database on the back end that has purposefully 
+been left vulnerable to an SQL injection attack.
+
+Step 1. First of all, get your fork of this repo up and running by installing these three packages:
+
+   express
+   sqlite3
+   body-parser
+
+Step 2. Run npm start on the command line to start the server, which should be rendering on localhost:3000.
+
+Step 3. Read the long comments in the app.js file (And make sure not to uncomment anything you're not asked to uncomment). 
+
+   Make sure that you've read all of these comments, you understand them, and that you've followed them before starting Step 3.
+
+STEP 4. Type/copy-then-paste these exact characters in the password field as if you were a valid user: unknown' OR '1'='1 
+
+STEP 5. At this point, the user you inserted in the db should be logged in even though the correct username was not submitted! 
+
+   (If you follow the instructions in the app.js file, you'll see the message "Login successful" on the page)
+
+   So... not only can a bad actor get into a user's account with malicious intent, more queries could be added to the original query injected or in subsequent inputs.
+
+TROUBLESHOOTING: 
+
+   - If you forget your username or password before completing the attack successfully, you'll need to delete the package.json file
+the node_modules folder and then run npm install again. 
+
+   - There's no specific way to log out that's been set up, but it's not necessary to get the login form and see how SQL injection
+works from this activity. All you need to do is enter the login credentials again.
+
+   - You can go to localhost:3000 without the /login after it to refresh back to the login form and start over if you seem to get stuck.
+
+Extended Tasks:
+
+1. You can check out this video, currently on YouTube, which does a quite thorough job of explaining SQL Injection and has a related Kontra-like exercise: https://youtu.be/2OPVViV-GQk
+
+2. You could try to inject other kinds of SQL statements that can manipulate the DB in malicious ways by entering it as the username. 
+You could do this by adding more expressions for the sqlite database definition (after the expressions for creating the user db and then seeding it).
+
+If you do Number 2 above, you may need to do more research on sqlite3 "in-memory" databases, which work differently than other SQL platforms/dialects such as PostgreSQL because they don't have a 
+separate server process (SQLite has an "embedded database engine"). Some kinds of SQL statements, such as dropping a table, might not work the way they would
+with db that actually persists records. (Note: sqlite3 is a lightweight SQL dialect that comes out of the box with the Ruby on Rails and Django frameworks.)
+
+
+Happy (white hat) hacking!
+
